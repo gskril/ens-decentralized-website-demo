@@ -21,3 +21,4 @@ jobs:
         run: omnipin deploy next/out --strict --ens gtest.eth --safe devrel.enslabs.eth
         env:
           OMNIPIN_FILECOIN_TOKEN: ${{ secrets.OMNIPIN_FILECOIN_TOKEN }}
+          OMNIPIN_PK: ${{ secrets.OMNIPIN_PK }}
