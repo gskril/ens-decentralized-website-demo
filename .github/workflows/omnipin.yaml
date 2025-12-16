@@ -18,7 +18,7 @@ jobs:
         run: cd next && bun i && bun run build
 
       - name: Deploy the site
-        run: omnipin deploy next/out --strict --ens gtest.eth --safe devrel.enslabs.eth
+        run: omnipin deploy next/out --strict --ens gtest.eth --safe eth:0xeE9eeaAB0Bb7D9B969D701f6f8212609EDeA252E
         env:
           OMNIPIN_FILECOIN_TOKEN: ${{ secrets.OMNIPIN_FILECOIN_TOKEN }}
           OMNIPIN_PK: ${{ secrets.OMNIPIN_PK }}
